@@ -1,0 +1,65 @@
+# Site settings
+title: FraguaFisioterapia | Tradicción y Experiencia en terapia manual
+description: "FraguaFisioterapia, Tradicción y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y rehabilitación."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: img/logo.jpg
+
+# Hero
+hero:
+    hero_img: ppal_masaje.jpg
+    hero_title: Fragua Fisioterapia
+    hero_description: Tradición y Experiencia en Terapia Manual.
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: 657 05 36 90
+    emergency:
+    email: info@fraguafisioterapia.es
+    address: C/ Valdemoro 11 Local 2,<br> 28914 Leganés (Arroyo Culebro), Madrid
+
+    renfe: Parque Polvoranca, Línea C5 (Mostoles el Soto- Humanes)
+    bus: 482, Madrid(Aluche)-Leganés(Arroyo Culebro)
+# Opening hours
+monday_friday: 18:15 – 21:00
+
+# Testimonials
+testimonials:
+    testimonials_img: parallax.jpg
+
+# Map
+map:
+    zoom: 17
+    address: Valdemoro 11 Local 2, 28914 Leganés (Arroyo Culebro), Madrid, España
+    address_details: svg/min/logo.svg
+    gps: C/ Valdemoro esquina C/ Alcalde Vicente de la Barrera Cano
+# Social settings
+facebook: https://www.facebook.com/Fragua-Fisioterapia-1479828245652282/
+twitter:
+instagram:
+youtube:
+skype:
+feed: no
+
+# Footer
+copyright: © 2017 FraguaFisioterapia - Todos los derechos reservados
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics:
+google_verification:

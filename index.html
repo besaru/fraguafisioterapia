@@ -1,0 +1,321 @@
+---
+layout: default
+---
+
+<!-- Start Hero -->
+<div class="hero" style="background: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}') no-repeat; background-size: cover;">
+    <div class="hero-content">
+        <div class="container-fluid">
+            <div class="hero-content-inner">
+                <h1>{{ site.hero.hero_title }}</h1>
+                <p>{{ site.hero.hero_description }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
+            <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Pide tu Cita</h3>
+            <form action="https://formspree.io/besaru@gmail.com" method="POST">
+                <div class="form-field">
+                    <input name="name" type="text" placeholder="Nombre" required>
+                </div>
+                <div class="form-field">
+                    <input name="phone" type="tel" placeholder="Teléfono" required>
+                </div>
+                <div class="form-field">
+                    <input name="email" type="email" placeholder="Email" required>
+                </div>
+                <div class="form-field">
+                    <textarea name="comments" placeholder="Mensaje" required></textarea>
+                </div>
+                <input type="submit" class="btn btn-default" value="Enviar">
+            </form>
+            * Confirmaremos la cita previamente
+        </div>
+
+    </div>
+</div>
+<!-- End Hero -->
+
+<!-- Start 3 columns -->
+<div class="three-shade-col">
+    <div class="col-sm-4">
+        <svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>
+        <h3>Información de Contacto</h3>
+        <ul>
+            {% if site.contact.phone %}<li><strong>Teléfono:</strong> {{ site.contact.phone }}</li>{% endif %}
+            {% if site.contact.emergency %}<li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>{% endif %}
+            {% if site.contact.email %}<li><strong>Email:</strong> {{ site.contact.email }}</li>{% endif %}
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
+        <h3>Horario</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Lunes – Viernes</td>
+                    <td>{{ site.monday_friday }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2">(previa cita) </td>
+                </tr>
+              <!--  <tr>
+                    <td>Saturday</td>
+                    <td>{{ site.saturday }}</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>{{ site.sunday }}</td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
+        <h3>Localización</h3>
+            <p>
+                {{ site.contact.address }}
+            </p>
+    </div>
+</div>
+<!-- End 3 columns -->
+
+<!-- Start About -->
+<!--
+<div id="about" class="about">
+    <div class="container-fluid">
+        <h2 class="section-title">Sobre Nosotros</h2>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Bienvenido a Fragua Fisioterapia</h3>
+                <p> Tradicción y experiencia en terapia manual</p>
+
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-heart"><use xlink:href="#icon-heart"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Fisioterapia</p>
+                    </div>
+                </div>
+
+                <div class="media">
+                    <div class="media-left">
+                        <div class="boxed-icon">
+                            <svg class="icon icon-medkit"><use xlink:href="#icon-medkit"></use></svg>
+                        </div>
+                    </div>
+                    <div class="media-body">
+                        <p>Rehabilitación</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <img src="img/about2.jpg" alt="Sobre Nosotros">
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- End About -->
+
+<!-- Start Treatments -->
+<div id="treatments" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Tratamientos</h2>
+        <h3> Técnicas </h3>
+        <div class="row">
+          <div class="col-sm-8 col-md-6">
+          <div class="icon-box">
+            {% for treatment in site.data.treatments %}
+                <div class="col-sm-6 col-md-8">
+                    <!--<div class="icon-box">-->
+                      <!--  <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>-->
+                        <h4>{{ treatment.title }}</h4>
+                        <!--<p>{{ treatment.description }}</p>-->
+                    <!--</div>-->
+                </div>
+            {% endfor %}
+          </div>
+          </div>
+          <div class="col-sm-4 col-md-6">
+              <img src="img/rehabilitacion.jpg" alt="Tecnicas">
+          </div>
+        </div>
+        <h3>Patologías</h3>
+        <div class="row">
+          <div class="col-sm-8 col-md-6">
+          <div class="icon-box">
+            {% for treatment in site.data.patologies %}
+                <div class="col-sm-6 col-md-8">
+                    <!--<div class="icon-box">-->
+                    <!--    <svg class="icon {{ treatment.icon }}"><use xlink:href="#{{ treatment.icon }}"></use></svg>-->
+                        <h4>{{ treatment.title }}</h4>
+                        <!--<p>{{ treatment.description }}</p>-->
+                    <!--</div>-->
+                </div>
+            {% endfor %}
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-6">
+          <img src="img/patologias.jpg" alt="Patologias">
+      </div>
+
+      </div>
+    </div>
+</div>
+<!-- End Treatments -->
+
+<!-- Start Tarifas -->
+
+    <div id="rates" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.hero.hero_img }}');">
+        <div class="overlay-container">
+            <div class="overlay"></div>
+            <div class="container-fluid">
+              <h2 class="section-title">Tarifas</h2>
+              <div id="testimonial-carousel">
+                <div class="testimonial-item">
+                  <blockquote>
+                    <p>1 Sesión Terapia Manual 25 min ------------------------------------ 23€</p>
+                    <p>1 Sesión Terapia Manual 50 min ------------------------------------ 33€</p>
+                  </blockquote>
+                </div>
+                <div class="testimonial-item">
+                  <blockquote>
+                    <p>Bono 5 Sesiones Terapia Manual 25 min -------------------------- 100€ (20 € X Sesión)</p>
+                    <p>Bono 5 Sesiones Terapia Manual 50 min -------------------------- 150€ (30 € X Sesión)</p>
+                  </blockquote>
+                </div>
+
+              </div>
+              <small>* La Terapia Manual es la base del tratamiento. Además de éste, se podrá aplicar dependiendo de la Patología  Electrotermoterapia, Vendajes, Utilización del Gimnasio que estarán incluidos en el Precio.
+              </small>
+            </div>
+          </div>
+
+      </div>
+
+
+<!-- End Tarifas -->
+
+<!-- Start Testimonials -->
+<!--<div id="testimonials" class="testimonials parallax" style="background-image: url('{{ site.baseurl }}/img/{{ site.testimonials.testimonials_img }}');">
+    <div class="overlay-container">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <div id="testimonial-carousel">
+                {% for testimonial in site.data.testimonials %}
+                    <div class="testimonial-item">
+                        <svg class="icon icon-quote-left"><use xlink:href="#icon-quote-left"></use></svg>
+                        <blockquote>
+                            <p>{{ testimonial.description }}</p>
+                            <footer>
+                                {{ testimonial.name }}
+                                <small>{{ testimonial.title }}</small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- End Testimonials -->
+
+<!-- Start Gallery -->
+<!--<div id="gallery" class="gallery">
+
+    <h2 class="section-title">Gallery</h2>
+
+    {% for images in site.data.gallery %}
+        <a href="{{ site.baseurl }}/img/gallery/large/{{ images.image_large }}" class="gallery-item expandable-box image-link">
+            <div class="expandable-box-top">
+                <img src="{{ site.baseurl }}/img/gallery/thumb/{{ images.image_thumb }}" alt="{{ images.image_alt }}">
+            </div>
+            <div class="expandable-box-bottom">
+                <span><svg class="icon icon-chain"><use xlink:href="#icon-chain"></use></svg></span>
+            </div>
+        </a>
+    {% endfor %}
+
+</div>-->
+<!-- End Gallery -->
+
+
+
+<!-- Contacto -->
+<!-- contact form start -->
+<div id="contact" class="location">
+  <div class="container-fluid">
+    <h2 class="section-title"><br>Contacto</h2>
+    <div class="row">
+      Si tienes alguno consulta no dudes en ponerte en contacto con nosotros mediante el siguiente formulario:<br><br><br>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <form action="https://formspree.io/besaru@gmail.com" method="POST">
+
+
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Correo Electrónico">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Asunto">
+            </div>
+
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+
+            <div class="form-group-2">
+              <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Contacto -->
+
+
+<!-- Start Map -->
+<div  id="location" class="gallery">
+  <div class="row">
+  <div class="container-fluid">
+    <hr>
+  <h2 class="section-title"><br>Localización</h2>
+      <div class="col-sm-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.3689898261478!2d-3.7882778849274534!3d40.31196766992884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE4JzQzLjEiTiAzwrA0NycwOS45Ilc!5e0!3m2!1ses!2ses!4v1515357139805" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-6">
+        <h1><div style="color: #40b4ba">{{site.contact.address}}</div></h1>
+        <!--<div class="icon icon-map-marker"><img src="img/logoDireccion.jpg" alt="LogoDireccion">
+        </div>
+          C/{{site.map.address}}-->
+          <h3> Gps</h3>
+            <div class="icon icon-map-marker"><img src="img/logoDireccion.jpg" alt="LogoDireccion">
+            </div>
+              {{site.map.gps}}
+          <h3> Transporte Público </h3>
+            <div class="icon icon-map-marker"><img src="img/LogoRenfe.jpg" alt="LogoRenfe"></div>
+              {{site.contact.renfe}}
+              <br>
+              <div class="icon icon-map-marker"><img src="img/LogoBus.jpg" alt="LogoBus"></div>
+              {{site.contact.bus}}
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Map -->
