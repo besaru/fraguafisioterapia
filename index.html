@@ -53,14 +53,17 @@ layout: default
     <div class="col-sm-4">
         <svg class="icon icon-clock-o"><use xlink:href="#icon-clock-o"></use></svg>
         <h3>Horario</h3>
-        <table>
-            <tbody>
+
+        <table >
+            <tbody >
+
+
                 <tr>
                     <td>Lunes – Viernes</td>
-                    <td>{{ site.monday_friday }}</td>
+                    <td align="right">{{ site.monday_friday }}</td>
                 </tr>
                 <tr>
-                    <td colspan="2">(previa cita) </td>
+                    <td colspan="2" align="center">(previa cita) </td>
                 </tr>
               <!--  <tr>
                     <td>Saturday</td>
@@ -70,8 +73,10 @@ layout: default
                     <td>Sunday</td>
                     <td>{{ site.sunday }}</td>
                 </tr>-->
+
             </tbody>
         </table>
+
     </div>
     <div class="col-sm-4">
         <svg class="icon icon-map-marker"><use xlink:href="#icon-map-marker"></use></svg>
@@ -310,9 +315,10 @@ layout: default
     <hr>
   <h2 class="section-title"><br>Localización</h2>
       <div class="col-sm-6">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.3689898261478!2d-3.7882778849274534!3d40.31196766992884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE4JzQzLjEiTiAzwrA0NycwOS45Ilc!5e0!3m2!1ses!2ses!4v1515357139805" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.3689898261478!2d-3.7882778849274534!3d40.31196766992884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE4JzQzLjEiTiAzwrA0NycwOS45Ilc!5e0!3m2!1ses!2ses!4v1515357139805" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="col-sm-6" style="padding-left: 30px;">
+        <div class="hidden-sm hidden-md hidden-lg filter"></br></div>
         <h1><div style="color: #40b4ba">{{site.contact.address}}</div></h1>
         <!--<div class="icon icon-map-marker"><img src="img/logoDireccion.jpg" alt="LogoDireccion">
         </div>
