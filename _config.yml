@@ -7,7 +7,7 @@ logo_url: /img/logo.jpg
 
 # Hero
 hero:
-    hero_img: ppal_masaje.jpg
+    hero_img: /img/ppal_masaje.jpg
     hero_title: Fragua Fisioterapia
     hero_description: Tradición y Experiencia en Terapia Manual.
 
