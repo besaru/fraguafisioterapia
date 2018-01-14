@@ -1,6 +1,6 @@
 # Site settings
 title: FraguaFisioterapia | Tradición y Experiencia en terapia manual
-description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y rehabilitación."
+description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y Rehabilitación."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://besaru.github.io/fraguafisioterapia/" # the name of your domain
 logo_url: /img/logo.jpg
@@ -45,7 +45,7 @@ skype:
 feed: no
 
 # Footer
-copyright: © 2017 FraguaFisioterapia - Todos los derechos reservados
+copyright: © 2018 FraguaFisioterapia - Todos los derechos reservados
 
 # Build settings
 markdown: kramdown
