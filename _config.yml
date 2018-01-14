@@ -2,7 +2,7 @@
 title: FraguaFisioterapia | Tradición y Experiencia en terapia manual
 description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y Rehabilitación."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://besaru.github.io/fraguafisioterapia/" # the name of your domain
+url: "http://www.fraguafisioterapia.es/" # the name of your domain
 logo_url: /img/logo.jpg
 
 # Hero
@@ -22,7 +22,7 @@ contact:
     address: C/ Valdemoro 11 Local 2,<br> 28914 Leganés (Arroyo Culebro), Madrid
 
     renfe: Parque Polvoranca, Línea C5 (Mostoles el Soto- Humanes)
-    bus: 482, Madrid(Aluche)-Leganés(Arroyo Culebro)
+    bus: 482, Madrid (Aluche) - Leganés (Arroyo Culebro)
 # Opening hours
 monday_friday: 18:15 – 21:00
 
