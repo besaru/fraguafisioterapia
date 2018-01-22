@@ -2,7 +2,7 @@
 title: FraguaFisioterapia | Tradición y Experiencia en terapia manual
 description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y Rehabilitación."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://fraguafisioterapia.esy.es" # the name of your domain
+url: "https://besaru.github.io/fraguafisioterapia/" # the name of your domain
 logo_url: /img/logo.jpg
 
 # Hero
@@ -17,7 +17,7 @@ api_token: # Enter API token here
 # Contact info
 contact:
     phone: "657 05 36 90"
-    emergency:
+    emergency: ""
     email: fraguafisioterapia@gmail.com
     address: C/ Valdemoro 11 Local 2,<br> 28914 Leganés (Arroyo Culebro), Madrid
 
