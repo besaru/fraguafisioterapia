@@ -2,7 +2,8 @@
 title: FraguaFisioterapia | Tradición y Experiencia en terapia manual
 description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Conoce nuestras terapias, especializado en Fisioterapia y Rehabilitación."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://besaru.github.io/fraguafisioterapia/" # the name of your domain
+#url: "http://www.fraguafisioterapia.es" # the name of your domain
+url: "https://wwwfraguafisioterapiaes.000webhostapp.com" # the name of your domain
 logo_url: /img/logo.jpg
 
 # Hero
