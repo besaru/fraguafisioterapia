@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^fraguafisioterapia.es$ [NC]
+RewriteRule ^(.*)$ http://www.fraguafisioterapia.es/$1 [R=301,L]
