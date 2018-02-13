@@ -4,7 +4,7 @@ description: "FraguaFisioterapia, Tradición y Experiencia en terapia manual. Co
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://www.fraguafisioterapia.es" # the name of your domain
 #url: "https://wwwfraguafisioterapiaes.000webhostapp.com" # the name of your domain
-url: "http://fraguafisioterapia.tk" # the name of your domain
+url: "http://www.fraguafisioterapia.es" # the name of your domain
 logo_url: /img/logo.jpg
 
 # Hero
