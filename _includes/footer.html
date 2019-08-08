@@ -1,7 +1,7 @@
 <!-- Start Footer -->
 <footer class="main-footer">
     <div class="container-fluid">
-        
+
         <ul class="social">
             {% if site.facebook %}<li><a href="{{ site.facebook }}"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a></li>{% endif %}
             {% if site.twitter %}<li><a href="{{ site.twitter }}"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>{% endif %}
@@ -11,8 +11,11 @@
             {% if site.feed %}<li><a href="#"><svg class="icon icon-feed"><use xlink:href="#icon-feed"></use></svg></a></li>{% endif %}
         </ul>
 
-        <small>{% if site.copyright %} {{ site.copyright }} {% endif %}</small>
+        <small>{% if site.copyright %} {{ site.copyright }} {% endif %} |  <a href="{{site.url}}{{site.baseurl}}/avisolegal" target="_blank" style="color:#FFFFFF"> Aviso Legal </a></small>
+
 
     </div>
+
 </footer>
+
 <!-- End Footer -->

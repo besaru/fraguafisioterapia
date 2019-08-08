@@ -18,7 +18,7 @@ layout: default
         <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
             <h3><svg class="icon icon-envelope-o"><use xlink:href="#icon-envelope-o"></use></svg>Pide tu Cita</h3>
             <form action="https://formspree.io/fraguafisioterapia@gmail.com" method="POST">
-                <div class="form-field">
+                <div class="form-field" >
                     <input name="name" type="text" placeholder="Nombre" required>
                 </div>
                 <div class="form-field">
@@ -30,9 +30,14 @@ layout: default
                 <div class="form-field">
                     <textarea name="comments" placeholder="Mensaje" required></textarea>
                 </div>
-                <input type="submit" class="btn btn-default" value="Enviar">
+                <div style="font-size: 8pt" class="form-group">
+                  <input name="verifica" type="checkbox" required> Acepto la <a href="{{site.url}}{{site.baseurl}}/politicapd" target="_blank">Política de Privacidad.</a>
+                </div>
+                  <input type="submit" class="btn btn-default" value="Enviar">
             </form>
+            <div style="font-size: 8pt">
             * Confirmaremos la cita previamente
+          </div>
         </div>
 
     </div>
@@ -170,8 +175,7 @@ layout: default
                 </div>
 
               </div>
-              <small>* La Terapia Manual es la base del tratamiento. Además de éste, se podrá aplicar dependiendo de la Patología, Electrotermoterapia, Vendajes, Utilización del Gimnasio, que estarán incluidos en el Precio.
-              </small>
+
             </div>
           </div>
 
@@ -188,19 +192,20 @@ layout: default
     <h2 class="section-title"><br>Contacto</h2>
     <div class="row">
       <div class="container-fluid" style="padding-left: 30px;">Si tienes alguna consulta no dudes en ponerte en contacto con nosotros mediante el siguiente formulario:<br><br><br></div>
+
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form action="https://formspree.io/fraguafisioterapia@gmail.com" method="POST">
 
 
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Nombre">
+              Nombre <input type="text" class="form-control" >
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" placeholder="Correo Electrónico">
+              Correo Electrónico <input type="email" class="form-control" required>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Asunto">
+              Asunto <input type="text" class="form-control" >
             </div>
 
         </div>
@@ -209,13 +214,18 @@ layout: default
         <div class="block">
 
             <div class="form-group-2">
-              <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+              Mensaje <textarea class="form-control" rows="4" ></textarea>
+            </div>
+            <div class="form-group">
+              <input name="verifica" type="checkbox" required > Acepto la <a href="{{site.url}}{{site.baseurl}}/politicapd" target="_blank">Política de Privacidad </a>
             </div>
             <button class="btn btn-default" type="submit">Enviar Mensaje</button>
           </form>
         </div>
       </div>
     </div>
+</div>
+
   </div>
 </div>
 <!-- End Contacto -->
@@ -235,11 +245,11 @@ layout: default
         <h1><div style="color: #40b4ba">{{site.contact.address}}</div></h1>
         <!--<div class="icon icon-map-marker"><img src="img/logoDireccion.jpg" alt="LogoDireccion">
         </div>
-          C/{{site.map.address}}-->
+          C/{{site.map.address}}
           <h3> Gps</h3>
             <div class="icon icon-map-marker"><img src="{{site.url}}{{site.baseurl}}/img/logoDireccion.jpg" alt="LogoDireccion">
             </div>
-              {{site.map.gps}}
+              {{site.map.gps}}-->
           <h3> Transporte Público </h3>
             <div class="icon icon-map-marker"><img src="{{site.url}}{{site.baseurl}}/img/logoRenfe.jpg" alt="LogoRenfe"></div>
               {{site.contact.renfe}}

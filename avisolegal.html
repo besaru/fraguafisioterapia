@@ -1,0 +1,25 @@
+---
+layout: default2
+---
+
+
+<!-- Start Map -->
+<div  id="location" class="gallery">
+  <div class="row">
+  <div class="container-fluid">
+    <hr>
+  <h2 class="section-title"><br>Aviso legal</h2>
+
+      <div style="padding-left: 30px;">
+        {% for aviso in site.data.avisolegal %}
+
+          <br><b>{{aviso.section}}- {{aviso.title}}</b>
+          <br>{{aviso.description}}
+          <br>
+        {% endfor %}
+
+        </div>
+    </div>
+</div>
+</div>
+<!-- End Map -->

@@ -47,8 +47,12 @@ skype:
 feed: no
 
 # Footer
-copyright: © 2018 FraguaFisioterapia - Todos los derechos reservados
-
+copyright: © 2019 FraguaFisioterapia - Todos los derechos reservados
+legal:
+  politica: "De conformidad con el vigente Reglamento (UE) 2016/679, informamos que los datos de carácter personal de los Usuarios del sitio web se tratarán para la actividad de tratamiento de citas, información y demás cuestiones relacionadas con la Fisioterapia. Dicho tratamiento de sus datos estará amparado en su propio consentimiento. Al pulsar el botón 'ENVIAR', el Usuario consiente el tratamiento de sus datos por parte de la empresa.
+Asimismo, le informamos que, salvo obligación legal o consentimiento expreso por su parte, no cederemos sus datos a terceros.
+Igualmente, se informa al Usuario que en cualquier momento puede ejercitar los derechos de acceso, rectificación o supresión de datos, así como disponer de otros derechos reconocidos en el presente documento y regulados en el Reglamento (UE) 2016/679, notificándolo a Miguel Angel Fragua Díaz. C/ Valdemoro 11. 28914. Leganés. Email: fraguafisioterapia@gmail.com"
+  aviso: /img/aviso.jpg
 # Build settings
 markdown: kramdown
 
